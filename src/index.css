@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slideFromRight {
+    animation : slideInRight 3s cubic-bezier(0.4, 0, 0.6, 1) 1;
+}
+
+
+@keyframes slideInRight{
+    0%{
+        transform: translateX(120%);
+        /* opacity:0.5; */
+    }
+    100%{
+       transform: translateX(0);
+       /* opacity:1; */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  .carousel .control-dots .dot{
+    color:purple;
+    background-color: purple;
+}
+
+.carousel .control-dots {
+    background-color: rgba(128, 128, 128, 0.355);
+    padding:1px;
+}
+
