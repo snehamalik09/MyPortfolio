@@ -4,7 +4,6 @@ import css from '../assets/css.png';
 import javascript from '../assets/javascript.png';
 import react from '../assets/react.png';
 import node from '../assets/node.png';
-import nextjs from '../assets/nextjs.png';
 import cplusplus from '../assets/cplusplus.jpg'; 
 import tailwind from '../assets/tailwind.png'; 
 import mysql from '../assets/mysql.jpg'; 

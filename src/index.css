@@ -2,12 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.slideFromTop {
+    animation : slideTop 3s cubic-bezier(0.4, 0, 0.6, 1) 1;
+}
+
 .slideFromRight {
-    animation : slideInRight 3s cubic-bezier(0.4, 0, 0.6, 1) 1;
+    animation : slideRight 3s cubic-bezier(0.4, 0, 0.6, 1) 1;
 }
 
 
-@keyframes slideInRight{
+@keyframes slideTop{
+    0%{
+        transform: translateY(-200%);
+        /* opacity:0.5; */
+    }
+    100%{
+       transform: translateY(0);
+       /* opacity:1; */
+    }
+}
+
+
+@keyframes slideRight{
     0%{
         transform: translateX(120%);
         /* opacity:0.5; */
@@ -25,10 +41,8 @@ html {
   .carousel .control-dots .dot{
     color:purple;
     background-color: purple;
+    padding:2px;
 }
 
-.carousel .control-dots {
-    background-color: rgba(128, 128, 128, 0.355);
-    padding:1px;
-}
+
 

@@ -1,0 +1,23 @@
+# Handle line endings automatically for files recognized as text
+* text=auto
+
+# Explicitly set text files and enforce LF line endings
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.cjs text eol=lf
+
+# Treat configuration files as text
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+*.eslintrc text eol=lf
+*.md text eol=lf
+*.lock text eol=lf
+
+# Specific files
+index.html text eol=lf
+postcss.config.js text eol=lf
+tailwind.config.js text eol=lf
+vite.config.js text eol=lf
